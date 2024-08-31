@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Members only</title>
+  </head>
+  <body>
+    <%- include("header") %>
+    <main>
+      <% for( let index = 0; index < posts.length; index++ ) { %> <%-
+      include('message', {message: posts[index]}) %> <% } %>
+    </main>
+  </body>
+</html>
